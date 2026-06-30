@@ -86,7 +86,8 @@ export const scholarships: Scholarship[] = [
     org: 'CSRL',
     type: 'scholarship',
     year: '2023',
-    description: 'Selected among top 100 students nationally for intensive preparation.',
+    description:
+      "Selected among top 100 students nationally. Prepared intensively for JEE alongside some of India's most dedicated engineering aspirants in a highly competitive residential environment.",
     level: 'National',
   },
   {
