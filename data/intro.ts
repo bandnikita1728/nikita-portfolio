@@ -6,8 +6,8 @@ export const personal = {
   college: 'PDPM IIITDM Jabalpur',
   branch: 'Electronics & Communication Engineering',
   batch: '2023–2027',
-  class10: { percentage: '', board: '' }, // TODO: fill in
-  class12: { percentage: '', board: '' }, // TODO: fill in
+  class10: { percentage: '98', board: 'CBSE' },
+  class12: { percentage: '91', board: 'CBSE' },
   cgpa: '', // TODO: fill in
   school: 'Jawahar Navodaya Vidyalaya',
   email: 'nikitaband635@gmail.com',

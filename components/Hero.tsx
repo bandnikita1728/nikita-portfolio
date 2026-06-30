@@ -8,7 +8,13 @@ import { personal } from '@/data/intro'
 export default function Hero() {
   const [isMuted, setIsMuted] = useState(true)
   const [expanded, setExpanded] = useState(false)
-  const academicParts = [personal.college, personal.branch, personal.batch].filter(Boolean)
+  const academicParts = [
+    personal.class10.percentage ? `Class X: ${personal.class10.percentage}%` : null,
+    personal.class12.percentage ? `Class XII: ${personal.class12.percentage}%` : null,
+    personal.college,
+    personal.branch,
+    personal.batch,
+  ].filter(Boolean) as string[]
 
   return (
     <section
