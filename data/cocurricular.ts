@@ -14,23 +14,6 @@ export interface ActivityChip {
 
 export const leadershipRoles: LeadershipRole[] = [
   {
-    title: 'Technical Lead',
-    org: 'IIITDM Jabalpur Coding Club',
-    duration: '2024 – Present',
-    points: [
-      'Lead a team of 12 students organizing weekly DSA workshops and contests.',
-      'Mentored juniors preparing for their first competitive programming contests.',
-    ],
-  },
-  {
-    title: 'Core Team Member',
-    org: 'Innovation & Incubation Cell (IIC), IIITDM Jabalpur',
-    duration: '2023 – Present',
-    points: [
-      'Supported patent filing process and early-stage student innovation projects.',
-    ],
-  },
-  {
     title: 'FLY-Scholar (Finding the Leader in You)',
     org: 'Competitiveness Mindset Institute (CMI), USA · Foundation for Excellence',
     duration: 'Issued July 2024',
