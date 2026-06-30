@@ -39,11 +39,18 @@ export const leadershipRoles: LeadershipRole[] = [
       'Certificate No. 299137228',
     ],
   },
+  {
+    title: 'FLY Internship',
+    org: 'Competitiveness Mindset Institute (CMI), USA',
+    duration: 'May 2025 · Remote',
+    points: [
+      'Outreach internship practicing leadership and non-cognitive skills — taking initiative, innovativeness, perseverance, and problem solving through community and social media outreach.',
+      'Certificate of Experience',
+    ],
+  },
 ]
 
 export const activityChips: ActivityChip[] = [
   { icon: 'Trophy', name: 'Cognizance Hackathon, IIT Roorkee', result: 'Finalist', year: '2024' },
   { icon: 'Code2', name: 'Smart India Hackathon', result: 'Participant', year: '2024' },
-  { icon: 'Users', name: 'Coding Club Workshops', result: 'Organizer', year: '2024' },
-  { icon: 'Mic', name: 'Tech Fest — Technical Talk', result: 'Speaker', year: '2025' },
 ]
