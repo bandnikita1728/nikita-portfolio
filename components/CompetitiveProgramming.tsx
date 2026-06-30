@@ -23,18 +23,22 @@ export default function CompetitiveProgramming() {
               <FadeIn key={p.name} delay={i * 0.08}>
                 <div className="glass-card p-6 h-full">
                   <p className="font-poppins font-bold text-4xl gradient-text mb-1">{p.stat}</p>
-                  <p className="font-inter text-white/55 text-[12.5px] mb-4">{p.statLabel}</p>
+                  <p className="font-inter text-white/55 text-[12.5px] mb-1">{p.statLabel}</p>
+                  <p className="font-mono text-[12px] text-white/50 mb-4">Rating: {p.rating}</p>
                   <p className="font-poppins font-semibold text-white text-[15px] mb-1">{p.name}</p>
-                  <p className="font-mono text-[12px] text-white/50 mb-1">{p.handle}</p>
-                  <p className="font-mono text-[11.5px] text-white/40 mb-4">{p.rank}</p>
-                  <a
-                    href={p.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-inter text-sm font-medium gradient-text"
-                  >
-                    View profile →
-                  </a>
+                  {p.handle && (
+                    <p className="font-mono text-[12px] text-white/50 mb-1">{p.handle}</p>
+                  )}
+                  {p.url && (
+                    <a
+                      href={p.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-inter text-sm font-medium gradient-text"
+                    >
+                      View profile →
+                    </a>
+                  )}
                 </div>
               </FadeIn>
             ))}

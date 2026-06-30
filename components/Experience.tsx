@@ -38,6 +38,18 @@ export default function Experience() {
                     </li>
                   ))}
                 </ul>
+                {e.tags && e.tags.length > 0 && (
+                  <div className="flex flex-wrap gap-1.5 mt-4 pt-4 border-t border-white/10">
+                    {e.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="font-mono text-[10.5px] text-white/50 bg-white/[0.05] border border-white/10 rounded-full px-2.5 py-1"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             </FadeIn>
           ))}

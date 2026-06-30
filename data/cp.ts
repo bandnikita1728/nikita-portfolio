@@ -3,26 +3,26 @@ export interface CPPlatform {
   handle: string
   stat: string
   statLabel: string
-  rank: string
+  rating: string
   url: string
 }
 
 export const cpPlatforms: CPPlatform[] = [
   {
     name: 'LeetCode',
-    handle: '@nikitaband',
-    stat: '450+',
+    handle: '',
+    stat: '300+',
     statLabel: 'Problems solved',
-    rank: 'Rating: 1650 (Knight zone)',
-    url: 'https://leetcode.com/nikitaband',
+    rating: '1671',
+    url: '',
   },
   {
     name: 'CodeChef',
-    handle: '@nikitaband',
-    stat: '3★',
+    handle: '',
+    stat: '2★',
     statLabel: 'CodeChef rating',
-    rank: 'Max rating: 1680',
-    url: 'https://codechef.com/users/nikitaband',
+    rating: '1510',
+    url: '',
   },
 ]
 
@@ -38,4 +38,4 @@ export const cpTopics = [
 ]
 
 export const cpLanguage = 'C++'
-export const currentlyMastering = 'Advanced Graph Algorithms & Segment Trees'
+export const currentlyMastering = 'Advanced Dynamic Programming'

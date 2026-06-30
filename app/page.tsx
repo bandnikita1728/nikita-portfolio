@@ -20,8 +20,8 @@ export default function Home() {
       <Honors />
       <Skills />
       <Experience />
-      <CoCurricular />
       <CompetitiveProgramming />
+      <CoCurricular />
       <Contact />
       <Footer />
     </main>

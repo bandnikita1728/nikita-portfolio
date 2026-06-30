@@ -1,3 +1,9 @@
+export interface SubItem {
+  title: string
+  year: string
+  description: string
+}
+
 export interface Scholarship {
   title: string
   org: string
@@ -8,19 +14,31 @@ export interface Scholarship {
   score?: string
   grade?: string
   rollNo?: string
-  filingNumber?: string
   certNo?: string
   partner?: string
+  subItems?: SubItem[]
 }
 
 export const scholarships: Scholarship[] = [
   {
     title: 'Amazon Future Engineer Scholar',
-    org: 'Amazon',
+    org: 'Amazon, in partnership with NavGurukul and Zuvy',
     type: 'scholarship',
     year: '2025',
-    description: '', // intentionally empty, no description
+    description: '',
     level: 'National',
+    subItems: [
+      {
+        title: 'Amazon Future Engineer Bootcamp — Basics of Python and AI',
+        year: 'March 2025',
+        description: 'Completed a 2-month course covering Python fundamentals and AI basics.',
+      },
+      {
+        title: 'Amazon Future Engineer Bootcamp Phase 2 — Basics of Java and DSA',
+        year: 'Feb 2026',
+        description: 'Completed a 10-month course covering Java fundamentals and DSA.',
+      },
+    ],
   },
   {
     title: 'Foundation for Excellence Scholar',
@@ -28,22 +46,6 @@ export const scholarships: Scholarship[] = [
     type: 'scholarship',
     year: '2024',
     description: 'Financial support and mentorship.',
-    level: 'National',
-  },
-  {
-    title: 'Amazon Future Engineer Bootcamp Phase 2 — Basics of Java and DSA',
-    org: 'Amazon Future Engineer, in partnership with NavGurukul and Zuvy',
-    type: 'certificate',
-    year: 'Feb 2026',
-    description: 'Completed a 10-month course covering Java fundamentals and DSA.',
-    level: 'National',
-  },
-  {
-    title: 'Amazon Future Engineer Bootcamp — Basics of Python and AI',
-    org: 'Amazon Future Engineer, in partnership with NavGurukul and Zuvy',
-    type: 'certificate',
-    year: 'March 2025',
-    description: 'Completed a 2-month course covering Python fundamentals and AI basics.',
     level: 'National',
   },
   {
@@ -102,15 +104,5 @@ export const scholarships: Scholarship[] = [
     year: 'Jan 2015',
     description: 'National-level entrance examination, Class 6.',
     level: 'National',
-  },
-  {
-    title: 'Patent Filed (IPR Submitted)',
-    org: 'IIITDM Jabalpur IIC',
-    type: 'patent',
-    year: '2026',
-    filingNumber: '', // TODO: fill in when available
-    description:
-      'Co-inventor of an automated vertical burger-making machine using Raspberry Pi, servo motors, and ultrasonic sensors. IPR form submitted, not yet granted.',
-    level: 'Patent Filing (Pending)',
   },
 ]

@@ -48,11 +48,22 @@ export default function Honors() {
                   </p>
                 )}
 
-                {h.type === 'patent' && (
-                  <p className="font-mono text-[11px] text-white/50 mt-3">
-                    {h.level}
-                    {h.filingNumber ? ` · Filing No. ${h.filingNumber}` : ''}
-                  </p>
+                {h.subItems && h.subItems.length > 0 && (
+                  <div className="mt-4 space-y-3 border-t border-white/10 pt-4">
+                    {h.subItems.map((sub) => (
+                      <div key={sub.title} className="pl-3 border-l-2 border-white/15">
+                        <div className="flex items-start justify-between gap-2 mb-0.5">
+                          <p className="font-inter font-medium text-white/80 text-[12.5px] leading-snug">
+                            {sub.title}
+                          </p>
+                          <span className="font-mono text-[10px] text-white/35 flex-shrink-0">{sub.year}</span>
+                        </div>
+                        {sub.description && (
+                          <p className="font-inter text-white/50 text-[11.5px] leading-relaxed">{sub.description}</p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
                 )}
               </div>
             </FadeIn>
